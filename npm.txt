@@ -1,0 +1,44 @@
+Once we install node we also install npm
+
+
+npm- global command, comes with node
+npm --version
+
+we can install package as 
+1. local dependency
+2. global dependency
+
+local dependency- use it only in this particular project
+npm i <packageName>
+
+global dependency- use it in any project
+npm install -g <packageName>
+sudo npm install-g<packageName>(mac)
+
+
+THREE way to create a package json
+package.json- manifest file(stores important info about project/package)
+  1.manual approach(create package.json in the root, create properties etc)
+  2.npm init(step by step, press enter to skip)
+  3.npm init -y (everything default)
+
+WE WILL FOCUS ON LOCAL DEPENDENCY FIRST
+
+
+why do we need this package json?
+we need it because we need to provide information about our project
+and inside there, a very important property is the dependencies one
+because in there we'll just store the dependency which our project is using
+and then some packages are actually going to use more dependencies
+and they will be automatically installed as well
+
+In order to start using the module
+const _=require('lodash') 
+cons items=[1,[2,[3,[4]]]]
+const newItems = _.flattenDeep(items)
+console.log(newItems)
+
+WHY HAVING PACKAGE JSON IS SO CRUCIAL AND SO BENEFICIAL
+WHEN WE ARE STARTING SHARING
+OUR PROJECT WITH OTHER DEVELOPERS?
+
